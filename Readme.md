@@ -1,6 +1,6 @@
-#WAM Envs
+# WAM Envs
 
-![Alt text](/gifs/wamwipe.jpg?raw=true "Optional Title")
+![Alt text](/gifs/wamwipe.gif?raw=true "Optional Title")
 
 
 You should build a virtual env from scratch for this project:

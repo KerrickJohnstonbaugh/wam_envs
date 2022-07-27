@@ -1,17 +1,19 @@
 # WAM Envs
 
-![Alt text](/gifs/wamwipe.gif?raw=true "Optional Title")
+![WAMWipe gif](/gifs/wamwipe.gif?raw=true "WAMWipe-v1")
 
 
 You should build a virtual env from scratch for this project: Make sure you use python 3.7.
 
 **Activate your environment, then:**
 
+```
 pip install tensorflow-cpu 1.15
 
 pip install mujoco-py
+```
 
-install baselines:
+**install baselines:**
 
 git clone https://github.com/openai/baselines.git
 
@@ -36,7 +38,7 @@ Now you have all the dependencies...
 cd into the cloned wam_envs directory and run "pip install -e ."
 
 # Usage
-See openai baselines github page for more info on baselines usage. 
+See openai [baselines github page] (https://github.com/openai/baselines) for more info on baselines usage. 
 
 Some examples using WAMWipe can be found below.
 

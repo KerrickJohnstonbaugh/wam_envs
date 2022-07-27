@@ -36,6 +36,9 @@ Now you have all the dependencies...
 cd into the cloned wam_envs directory and run "pip install -e ."
 
 # Usage
+See openai baselines github page for more info on baselines usage. 
+
+Some examples using WAMWipe can be found below.
 
 Watch an untrained, 7dof joint velocity agent in WAMWipe-v1:
 

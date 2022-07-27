@@ -21,7 +21,7 @@ cd baselines
 
 pip install -e .
 ```
-**downgrade protobuf:**
+**downgrade protobuf and install mpi4py:**
 ```
 pip install protobuf==3.20.*
 

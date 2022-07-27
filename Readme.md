@@ -14,31 +14,31 @@ pip install mujoco-py
 ```
 
 **install baselines:**
-
+```
 git clone https://github.com/openai/baselines.git
 
 cd baselines
 
 pip install -e .
-
+```
 **downgrade protobuf:**
-
+```
 pip install protobuf==3.20.*
 
 pip install mpi4py
-
+```
 **downgrade h5py:**
-
+```
 pip install h5py==2.10.0
-
+```
 Now you have all the dependencies...
 
 **Install wam_envs in your virtual env:**
 
-cd into the cloned wam_envs directory and run "pip install -e ."
+cd into the cloned wam_envs directory and run `pip install -e .`
 
 # Usage
-See openai [baselines github page] (https://github.com/openai/baselines) for more info on baselines usage. 
+See openai [baselines github page](https://github.com/openai/baselines) for more info on baselines usage. 
 
 Some examples using WAMWipe can be found below.
 

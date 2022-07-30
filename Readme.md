@@ -8,7 +8,7 @@ You should build a virtual env from scratch for this project: Make sure you use 
 **Activate your environment, then:**
 
 ```
-pip install tensorflow-cpu 1.15
+pip install tensorflow-cpu==1.15
 
 pip install mujoco-py
 ```

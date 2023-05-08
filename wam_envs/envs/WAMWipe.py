@@ -37,9 +37,10 @@ class WAMWipeEnv(wam_env.WAMEnv, gym_utils.EzPickle):
         self.tilted = False
         self.braking = False
 
-        initial_qlist = [-2.02362697e-01,  4.33858512e-01,  4.71274239e-02,  2.17864115e+00,
-        -3.92220801e-02,  5.29857799e-01, -1.25754495e-01]
-
+        # initial_qlist = [-2.02362697e-01,  4.33858512e-01,  4.71274239e-02,  2.17864115e+00,
+        # -3.92220801e-02,  5.29857799e-01, -1.25754495e-01]
+        initial_qlist = [2.87153510e-04, 7.75983718e-01, 2.64453997e-04, 2.24388415e+00,
+                                                    4.94380817e-04, 1.21839344e-01, 8.40652563e-04]
         super(WAMWipeEnv, self).__init__(
             model_path=model_path, initial_qlist=initial_qlist, n_substeps=n_substeps, robot_mode=robot_mode, n_actions=n_actions)
 
@@ -83,7 +84,7 @@ class WAMWipeEnv(wam_env.WAMEnv, gym_utils.EzPickle):
     def _render_callback(self):
         # Visualize target.
         site_id = self.sim.model.site_name2id('target0')
-        self.sim.model.site_pos[site_id] = self.goal + np.array([0, 0, 0.346*3])#-0.06]) # make note of what each of these numbers represent
+        self.sim.model.site_pos[site_id] = self.goal + np.array([0, 0, 0.346*3-0.06]) # make note of what each of these numbers represent
 
         # Add marker to end-effector
         q = utils.get_joint_angles(self.sim)

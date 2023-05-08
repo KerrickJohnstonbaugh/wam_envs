@@ -145,7 +145,7 @@
                                         <joint name="wam/palm_yaw_joint" range="-3 3" damping="0.0"/>
                                         <geom class="viz" mesh="wrist_palm_link_fine"/>
                                         <geom class="col" mesh="wrist_palm_link_convex"/>
-										<include file="include_bhandChain.xml"/>
+										<!-- <include file="include_bhandChain.xml"/> -->
                                     </body>
                                 </body>
                             </body>
